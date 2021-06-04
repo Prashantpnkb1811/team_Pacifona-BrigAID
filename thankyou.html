@@ -64,18 +64,48 @@
     </div>
     
     <div class="site-section">
-      <div class="container">
+      <div class="container" >
         <div class="row">
-          <div class="col-md-12 text-center">
+          <div class="col-md-12 text-center" id="scan">
             <h2 class="display-3 text-black"></h2>
             <p class="lead mb-5 text-dark" >Choose image which you want to scan</p>
             <form action="" >
               
             <input type="file" id="file" accept="image/*" onchange="loadImage(event)">
           </form>
-            <p><a href="shop.html" class="btn btn-md height-auto px-4 py-3 btn-primary my-5">Scan Now</a></p>
-         
+            <p><button class="btn btn-md height-auto px-4 py-3 btn-primary my-5" onclick='run()'>Scan Now</button></p>
           </div>
+          <div id="real" style='display:none;'>  
+            <div class="d-flex">
+            <figure style="border:3px solid green">
+            <img src="images\Betaloc 25mg Tablet 30 SA.jpg" alt="" style="width:500px; height:300px; " class=" d-block text-center" >
+          </figure>
+          <div  style='display:flex; flex-direction:column;'>
+          <div>   
+            <table class="mx-5 my-5 table-bordered ">
+            <thead>
+            </thead>
+            <tbody>
+            </tbody>
+            <tr>
+              <th>  Name</td>
+              <td>Betaloc 25mg tablet</td>
+            </tr>
+            <tr><th>Bar Code Number</td><td> 89000000000</td></tr>
+            <tr><th>Prescribed for:</td><td style="width:500px; height:auto;">
+              Hypertension, Angina, Arrhythmia, Heart attack and Migraine</td></tr>
+          </table>
+        </div>
+          <h2 class='text-success text-center'> Real Medicine</h2>  
+          </div>
+        </div>
+        </div>
+        <div id="fake" style='display:none;'>
+          <div class="d-flex">
+            <figure style="border:3px solid green">
+            <img src="images\forxiga-10mg-tablet-500x500.png" alt="" style="width:500px; height:300px; " class=" d-block text-center" >
+          </figure>
+          <h2 class='text-danger text-center ' style="position:relative; top:100px;width:700px;">Fake Medicine</h2>  
         </div>
       </div>
     </div>
@@ -126,6 +156,7 @@
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/aos.js"></script>
+  <script src="js/app.js"></script>
 
   <script src="js/main.js"></script>
 
